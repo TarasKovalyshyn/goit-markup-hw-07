@@ -1,3 +1,12 @@
-body{
-    background-color: aqua;
-}
+@import"./base/reset";
+@import"./base/button";
+@import"./utils/header";
+@import"./utils/bussines";
+@import"./utils/proposition";
+@import"./utils/doing";
+@import"./utils/team";
+@import"./base/social";
+@import"./utils/customers";
+@import"./utils/footer";
+@import"./utils/portfolio";
+@import"./utils/modal";
