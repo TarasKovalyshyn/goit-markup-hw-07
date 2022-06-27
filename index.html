@@ -42,13 +42,13 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts">
-          <li class="contacts-item">
+        <ul class="contact">
+          <li class="contact__item">
             <a
-              class="header-contact-icon link"
+              class="contact__icon "
               href="mailto:info@devstudio.com"
             >
-              <svg class="header-icon" width="16" height="12">
+              <svg class="icon" width="16" height="12">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-envelope"
                 ></use>
@@ -56,9 +56,9 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
-            <a class="header-contact-icon link" href="tel:+380961111111">
-              <svg class="header-icon" width="10" height="16">
+          <li class="contact__item">
+            <a class="contact__icon" href="tel:+380961111111">
+              <svg class="icon" width="10" height="16">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
                 ></use>
@@ -524,73 +524,73 @@
 
     <div class="backdrop /*is-hidden*/" data-modal>
       <div class="modal">
-        <button class="modal-button" data-modal-close>
-          <svg class="modal-icon-close" width="18" height="18">
+        <button class="modal__button" data-modal-close>
+          <svg class="icon__close" width="18" height="18">
             <use
               href="./images/icons.svg/symbol-defs.svg#icon-close-black"
             ></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form autocomplete="on" novalidate>
-          <label for="user-name" class="modal-label">Имя</label>
+          <label for="user-name" class="modal__label">Имя</label>
           <div class="input-wrap">
             <input
               type="text"
-              class="modal-input"
+              class="modal__input"
               name="user-name"
               id="user-name"
-            /><svg class="svg-input" width="18" height="18">
+            /><svg class="svg__modal" width="18" height="18">
               <use href="./images/icons.svg/symbol-defs.svg#icon-person"></use>
             </svg>
           </div>
 
-          <label for="user-tel" class="modal-label">Телефон </label>
+          <label for="user-tel" class="modal__label">Телефон </label>
           <div class="input-wrap">
             <input
               type="tel"
-              class="modal-input"
+              class="modal__input"
               name="user-tel"
               id="user-tel"
               required
-            /><svg class="svg-input" width="18" height="18">
+            /><svg class="svg__modal" width="18" height="18">
               <use href="./images/icons.svg/symbol-defs.svg#icon-phone"></use>
             </svg>
           </div>
 
-          <label for="user-email" class="modal-label">Почта</label>
+          <label for="user-email" class="modal__label">Почта</label>
           <div class="input-wrap">
             <input
-              class="modal-input"
+              class="modal__input"
               type="email"
               name="user-email"
               id="user-email"
               required
-            /><svg class="svg-input" width="18" height="18">
+            /><svg class="svg__modal" width="18" height="18">
               <use href="./images/icons.svg/symbol-defs.svg#icon-email"></use>
             </svg>
           </div>
 
-          <label for="user-text" class="modal-label">Комментарий</label>
+          <label for="user-text" class="modal__label">Комментарий</label>
           <textarea
-            class="modal-text"
+            class="modal__text"
             name="user-text"
             id="user-text"
             placeholder="Введите текст"
           ></textarea>
 
-          <label for="agreement" class="label-checkbox"
+          <label for="agreement" class="label__checkbox"
             ><input
               type="checkbox"
               name="agreement"
-              class="modal-check"
+              class="modal__checkbox"
               id="agreement"
             />
-            <span class="checkbox-icon"></span>
+            <span class="custom__checkbox"></span>
             Соглашаюсь с рассылкой и принимаю
             <a
               href="https://uk.wikipedia.org/wiki/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D1%96%D1%80"
-              class="agreement-link"
+              class="agreement__link"
               target="_blank"
               rel="noopener nofollow noreferrer"
               >Условия договора

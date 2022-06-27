@@ -5,11 +5,12 @@
   .navigation__item {
     position: relative;
     padding: 30px 0;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  
   }
 
-.navigation__item:not(:last-child) {
-    margin-right: 50px;
-  }
 
   .navigation__link {
     font-weight: 500;
@@ -20,6 +21,10 @@
     transition-property: color;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
+    &:hover,
+  &:focus {
+    color: var(--main-second-color);
+  }
   }
   
   .navigation__list .navigation__link.current::after {
@@ -39,7 +44,4 @@
  
   
   
-  .navigation__link:hover,
-  .navigation__link:focus {
-    color: var(--main-second-color);
-  }
+  
