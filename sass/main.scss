@@ -2,7 +2,8 @@
 @import"./base/reset";
 @import"./components/container";
 @import"./components/hidden";
-@import"./components/main-button";
+@import"./utils/mixins";
+@import"./components/main__button";
 @import"./layout/header";
 @import"./components/contacts";
 @import"./components/navigation";

@@ -1,159 +1,126 @@
 .footer-wrap {
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
+}
+.footer {
+  background-color: #2f303a;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.footer-webstudio {
+  font-family: "Raleway";
+  @include font(700, 26px, 31px, 00.03em);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $main-second-color;
+}
+
+.footer-logo {
+  color: $white-color;
+}
+
+.footer-address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-link {
+  @include font(400, 14px, 24px, 00.03em);
+  color: $white-color;
+}
+
+.footer-mail,
+.footer-tel {
+  @include font(400, 14px, 24px, 00.03em);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-soc-text {
+  font-family: inherit;
+  font-style: normal;
+  @include font(700, 14px, 16px, 00.03em);
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer__link-color {
+  fill: $icons-color;
+  background: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 1);
+  &:hover,
+  &:focus {
+    background-color: $main-second-color;
   }
-  .footer {
-    background-color: #2f303a;
-    box-sizing: border-box;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
+}
+
+.footer-form-text {
+  font-family: inherit;
+  @include font(700, 14px, 16px, 00.03em);
+  text-transform: uppercase;
+  color: $white-color;
+}
+.footer-form-btn {
+  padding: 10px 30px 10px 29px;
+  margin-left: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color, color, box-shadow, fill;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:hover,
+  &:hover {
+    background-color: $button-tex-color;
+    color: $hover-focus_color;
+    fill: $hover-focus_color;
   }
-  
-  .footer-webstudio {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--main-second-color);
-  }
-  
-  .footer-logo {
-    color: white;
-  }
-  
-  .footer-address {
-    font-style: normal;
-    margin-top: 20px;
-  }
-  
-  .footer-item:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  .footer-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(26 / 14);
-    letter-spacing: 0.03em;
-    color: #ffffff;
-  }
-  
-  .footer-mail,
-  .footer-tel {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-  
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
-  .address:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  
-  .footer-soc-list {
-    display: flex;
-  }
-  
-  .footer-soc-text {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  
-  .footer__link-color {
-    fill: var(--icons-color);
-    background: rgba(255, 255, 255, 0.1);
-    fill: rgba(255, 255, 255, 1);
-  }
-  .footer__link-color:hover,
-  .footer__link-color:focus {
-    background-color: var(--main-second-color);
-  }
-  
-  .footer-form-text {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .footer-form-btn {
-    padding: 10px 30px 10px 29px;
-    background: var(--main-second-color);
-    border-radius: 4px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    margin-left: 12px;
-    color: #ffffff;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    fill: white;
-    transition-property: background-color, color, box-shadow, fill;
-    transition-duration: var(--duration);
-    transition-timing-function: var(--timing-function);
-  }
-  
-  .footer-form-btn:hover,
-  .footer-icon-form:hover {
-    background-color: #eeeeee;
-    color: #188ce8;
-    fill: #188ce8;
-  }
-  
-  .footer-imput {
-    width: 360px;
-    height: 50px;
-    background-color: #2f303a;
-    padding: 15px 0 15px 16px;
-    margin-top: 20px;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    outline: none;
-    cursor: pointer;
-    transition-property: border;
-    transition-duration: var(--duration);
-    transition-timing-function: var(--timing-function);
-  }
-  
-  .footer-imput:focus {
-    border: 1px solid var(--main-second-color);
+}
+
+.footer-imput {
+  width: 360px;
+  height: 50px;
+  padding: 15px 0 15px 16px;
+  margin-top: 20px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: #2f303a;
+  color: $white-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition-property: border;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  &:focus {
+    border: 1px solid $main-second-color;
     outline: none;
   }
-  
-  .footer-imput::placeholder {
+  &::placeholder {
     display: inline-block;
     font-family: inherit;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.03em;
+    @include font (400, 16px, 20px, 00.03em);
     color: rgba(255, 255, 255, 0.6);
   }
-  .footer-icon-form {
-    margin-left: 10px;
-  }
-  .footer-form {
-    margin-left: 90px;
-  }
-  .footer-div-address {
-    margin-right: 50px;
-  }
-  
-  
+}
+
+.footer-icon-form {
+  margin-left: 10px;
+}
+.footer-form {
+  margin-left: 90px;
+}
+.footer-div-address {
+  margin-right: 50px;
+}

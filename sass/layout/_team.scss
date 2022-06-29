@@ -4,24 +4,25 @@
     padding-bottom: 94px;
   }
   .team__title {
+    @include font (700, 36px, 16px, 00.03em);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-color);
+    color: $main-color;
     margin-bottom: 50px;
   }
   
   .team__list {
-    display: flex;
+    @include align-list;
     justify-content: center;
     text-align: center;
   }
   .team__item {
     box-sizing: border-box;
     background: #ffffff;
-    box-shadow: var(--card-shadow);
+    box-shadow: $card-shadow;
     border-radius: 0px 0px 4px 4px;
   }
   .team__item--margin:not(:last-child) {
@@ -32,18 +33,14 @@
   }
   
   .team-card__title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
+    @include font (500, 16px, 19px, 00.03em);
     margin-bottom: 10px;
-    color: var(--main-color);
+    color: $main-color;
   }
   
   .team-card__text {
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: var(--mail-color);
+    @include font (400, 16px, 19px, 00.03em);
+    color: $mail-color;
     margin-bottom: 16px;
   }
   
